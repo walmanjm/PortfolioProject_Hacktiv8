@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c08e1bd072.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Project Hacktiv8 | WJM.</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/android-chrome-192x192.png" alt="logo of my name create using favicon.io">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="home-box">
+                <h3>Hello,</h3>
+                <h1>I'm <span>Walman JM</span></h1>
+                <p>Front End Developer</p>
+                <button class="btn"><a href="mailto:walmanjm@gmail.com">Hire Me</a></button>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h1 class="heading"><span>About</span> Me</h1>
+            <div class="about-box">
+                <img src="images/1.PNG" alt="vector image from freepik.com">
+                <div class="info">
+                    <h2>Front End always make me curious</h2>
+                    <p>At this point i'm currently learn about <strong><em>HTML</em></strong>,
+                        <strong><em>CSS</em></strong> and <strong><em>JavaScript</em></strong>. It's always make me
+                        wonder how do people make website that look beautiful and interactive, and here i am trying to
+                        make my own website starting from this simple Portfolio also as Final Project for Hacktiv8, i
+                        know that i still have a lot more to learn, so this is my honest journey from the very basic of
+                        web development, till i can master it someday in the future.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <h1 class="heading">My <span>Portfolio</span></h1>
+            <div class="portfolio-box">
+                <a href="https://walmanjm.github.io/Frontend_Mentor_Challenge/Four_Card_Feature_Section/index.html"
+                    target="_blank"><img src="images/Four_Card_Feature_Section.jpg" alt="#"></a>
+                <a href="https://walmanjm.github.io/Frontend_Mentor_Challenge/Fylo_Data_Storage_Component/index.html"
+                    target="_blank"><img src="images/Fylo_Data_Storage_Component.jpg" alt="#"></a>
+                <a href="https://walmanjm.github.io/Frontend_Mentor_Challenge/Social_Proof_Section/index.html"
+                    target="_blank"><img src="images/Social_Proof_Section.jpg" alt="#"></a>
+            </div>
+        </section>
+
+        <section class="blog" id="blog">
+            <h1 class="heading">Read this <span>Blog</span></h1>
+            <div class="blog-box">
+                <h2>HTML</h2>
+                <p>HTML is the standard markup language for Web pages. With HTML you can create your own
+                    Website.
+                    HTML is easy to learn - You will enjoy it!</p>
+                <a href="https://www.w3schools.com/html/default.asp" target="_blank">more >></a>
+            </div>
+            <div class="blog-box">
+                <h2>CSS</h2>
+                <p>CSS is the language we use to style an HTML document. CSS describes how HTML elements
+                    should be
+                    displayed. This tutorial will teach you CSS from basic to advanced.</p>
+                <a href="https://www.w3schools.com/css/default.asp" target="_blank">more >></a>
+            </div>
+            <div class="blog-box">
+                <h2>JavaScript</h2>
+                <p>JavaScript is the world's most popular programming language. JavaScript is the
+                    programming language
+                    of the Web. JavaScript is easy to learn. This tutorial will teach you JavaScript from
+                    basic to
+                    advanced.</p>
+                <a href="https://www.w3schools.com/js/default.asp" target="_blank"> more >></a>
+            </div>
+        </section>
+
+        <section class="team" id="team">
+            <h1 class="heading">Meet the <span>Team</span></h1>
+            <div class="team-box">
+                <div class="team-box-card">
+                    <img src="images/1.PNG" alt="vector image from freepik.com">
+                    <h1>John Doe</h1>
+                </div>
+                <div class="team-box-card">
+                    <img src="images/2.PNG" alt="vector image from freepik.com">
+                    <h1>Bruce Wayne</h1>
+                </div>
+                <div class="team-box-card">
+                    <img src="images/3.PNG" alt="vector image from freepik.com">
+                    <h1>Diana Prince</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h1 class="heading"><span>Contact</span> Me</h1>
+            <div class="contact-box">
+                <form name="form1" action="#" id="form" class="form">
+                    <input type="text" id="name" name="name" placeholder="Name" required class="contact-input">
+                    <input type="email" id="email" name="email" placeholder="Email" required class="contact-input">
+                    <textarea cols="0" rows="10" id="message" name="message" placeholder="Message"
+                        class="contact-input"></textarea>
+                    <input type="submit" id="submit" name="submit" value="Send" class="contact-submit"
+                        onclick="validateEmail(document.form1.email)">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="scroll-button">
+        <a href="#">▲</a>
+    </div>
+
+    <footer>
+        <div class="icon">
+            <a href="https://github.com/walmanjm/Frontend_Mentor_Challenge" target="_blank" aria-label="#">
+                <i class="fab fa-github-square"></i></a>
+            <a href="https://codepen.io/walmanjm" target="_blank" aria-label="#">
+                <i class="fab fa-codepen"></i></a>
+        </div>
+
+        <p>&copy; 2021 WJM.</p>
+
+        <span>Vector images <a href="http://www.freepik.com" target="_blank">
+                Designed by macrovector / Freepik</a></span>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
